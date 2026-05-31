@@ -9,6 +9,7 @@ import { MatchesModule } from './modules/matches/matches.module';
 import { ConfirmationsModule } from './modules/confirmations/confirmations.module';
 import { WhatsappModule } from './modules/whatsapp/whatsapp.module';
 import { ConfigModule } from '@nestjs/config';
+import { PrismaModule } from './prisma/prisma.module';
 
 @Module({
   imports: [
@@ -22,7 +23,7 @@ import { ConfigModule } from '@nestjs/config';
     PlayersModule, 
     MatchesModule, 
     ConfirmationsModule, 
-    WhatsappModule
+    WhatsappModule, PrismaModule
   ],
   controllers: [AppController],
   providers: [AppService],
